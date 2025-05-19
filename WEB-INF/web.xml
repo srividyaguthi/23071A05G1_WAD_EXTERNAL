@@ -1,0 +1,25 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <servlet-class>SetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <url-pattern>/setCookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewCookiesServlet</servlet-name>
+        <servlet-class>ViewCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewCookiesServlet</servlet-name>
+        <url-pattern>/viewCookies</url-pattern>
+    </servlet-mapping>
+
+</web-app>
